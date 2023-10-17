@@ -306,6 +306,12 @@ body {
   font-size: 0.8rem; /* 17.47px / 16px = 1.091875rem */
   font-weight: bold;
 }
+.text-3::placeholder{
+  margin: 16px 0 0 13px;
+  color: #77797a;
+  font-size: 1.1rem; /* 17.47px / 16px = 1.091875rem */
+  font-weight: bold;
+}
 .rounded-rectangle-6-holder {
   float: right;
   cursor: pointer;
@@ -867,7 +873,7 @@ body {
 }
 .featured-candidates {
   display: table;
-  margin: 175px auto 0;
+  margin: 14% auto 0;
   position: relative;
 }
 .text-19 {
@@ -1137,6 +1143,7 @@ body {
   text-transform: uppercase;
 }
    .featured-candidates {
+
     margin: 40px auto 0; /* Adjust margin for smaller screens */
   }
 
@@ -1312,7 +1319,13 @@ body {
     width: 300px; /* Adjust as needed */
     margin-left: -204px; /* Adjust as needed */
   }
-  body{
-    max-width: 768px;
+   body {
+    min-width: auto; /* Remove the min-width for screens below 768px */
+    font-size: 1.25rem; /* Adjust the font size for smaller screens if needed */
   }
+  .how-it-works{
+    min-width: 20%; /* Remove the min-width for screens below 768px */
+    font-size: 0.5rem; /* Adjust the font size for smaller screens if needed */
+  }
+
 }
