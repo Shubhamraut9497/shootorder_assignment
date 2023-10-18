@@ -112,11 +112,18 @@ body {
 html {
   font-size: 8px;
 }
+.ellipse-2{
+  display: none;
+}
+
 }
 @media (min-width: 1200px) {
 .container {
-  width: 1850px;
+  max-width: 1256px;
+  width: 100%;
+  /* other styles for your container */
 }
+
 }
 .global_container_ {
   float: none;
@@ -145,9 +152,13 @@ html {
   margin: 0 auto;
   position: relative;
   text-align: center;
+   display: flex;
+   flex-direction: row;
+  justify-content: space-around; /* Horizontally center */
+  align-items: center;
 }
 .col {
-  margin: 18rem 0.055066% 0 0; /* 1px / 1816px = 0.055066% */
+  margin: 14rem 0.055066% 0 0; /* 1px / 1816px = 0.055066% */
   position: relative;
 }
 .text {
@@ -390,19 +401,26 @@ html {
   margin-left: -465.5px;
 }
 .icons {
-  left: 50%;
+  left: 80%;
   min-height: 766px;
   position: absolute;
   top: 70px;
   width: 95.3125%; /* 854px / 896px = 95.3125% */
-  margin-left: -424px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  /* Additional styles for .icons */
+}
+.icons img {
+  max-width: 100%;
+  
 }
 .ellipse-2 {
-  left: 50%;
-  max-width: 740px;
+  left: 40%;
+  max-width: 400px;
   position: absolute;
   top: 12px;
-  width: 86.651054%; /* 740px / 854px = 86.651054% */
+  width: 66.651054%; /* 740px / 854px = 86.651054% */
   -webkit-border-radius: 370.07px/369.92px;
   -moz-border-radius: 370.07px/369.92px;
   border-radius: 370.07px/369.92px;
@@ -1318,5 +1336,14 @@ html {
 @media (max-width: 768px) {
 .candidate {
   padding: 5.1% 8.984375% 3.3%; /* 69px / 768px = 8.984375% */
+}
+.ellipse-2{
+  display: none;
+}
+}
+@media (max-width: 888px) {
+
+.ellipse-2{
+  display: none;
 }
 }
