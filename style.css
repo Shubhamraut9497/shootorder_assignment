@@ -113,7 +113,7 @@ html {
   font-size: 8px;
 }
 }
-@media (min-width: 1256px) {
+@media (min-width: 1200px) {
 .container {
   width: 1850px;
 }
@@ -147,7 +147,7 @@ html {
   text-align: center;
 }
 .col {
-  margin: 14rem 0.055066% 0 0; /* 1px / 1816px = 0.055066% */
+  margin: 18rem 0.055066% 0 0; /* 1px / 1816px = 0.055066% */
   position: relative;
 }
 .text {
@@ -398,8 +398,8 @@ html {
   margin-left: -424px;
 }
 .ellipse-2 {
-  left: 30%;
-  max-width: 500px;
+  left: 50%;
+  max-width: 740px;
   position: absolute;
   top: 12px;
   width: 86.651054%; /* 740px / 854px = 86.651054% */
